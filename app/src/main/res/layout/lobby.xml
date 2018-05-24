@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="mist.nexus.com.nexus.LobbyActivity">
+
+
+    <EditText
+        android:id="@+id/pesquisa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Seu desejo é uma ordem!"
+        android:inputType="text"
+        android:textColorHint="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/destaques"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Destaques da semana"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pesquisa" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="371dp"
+        android:layout_height="159dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/destaques"
+        tools:layout_editor_absoluteX="7dp">
+
+
+
+        <LinearLayout
+            android:id="@+id/linlay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/scroll">
+
+            <TextView
+                android:id="@+id/naruto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Naruto Shippuden"
+                android:textColor="@android:color/white"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linlay" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="387dp"
+                android:layout_height="150dp"
+                android:src="@drawable/naruto"
+                android:clickable="true"
+                android:onClick="chamarNaruto"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/naruto"/>
+
+            <TextView
+                android:id="@+id/berserk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Berserk"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView2" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="368dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:clickable="true"
+                android:onClick="chamarBerserk"
+                android:src="@drawable/berserk"
+                app:layout_constraintStart_toEndOf="@id/berserk" />
+
+            <TextView
+                android:id="@+id/dbz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dragon Ball Super"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView3" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="368dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:clickable="true"
+                android:onClick="chamarDBZ"
+                android:src="@drawable/dbz"
+                app:layout_constraintStart_toEndOf="@id/dbz" />
+
+            <TextView
+                android:id="@+id/sup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Super Campeões (2018)"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView2" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="368dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:clickable="true"
+                android:onClick="chamarSuperCampeoes"
+                android:src="@drawable/sup"
+                app:layout_constraintStart_toEndOf="@id/sup" />
+
+            <TextView
+                android:id="@+id/nanatsu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nanatsu to Taizai"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageView6" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="368dp"
+                android:layout_height="150dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:clickable="true"
+                android:onClick="chamarNanatsu"
+                android:src="@drawable/nanatsu"
+                app:layout_constraintStart_toEndOf="@id/nanatsu" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/recomendados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recomendados"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scroll" />
+
+    <TextView
+        android:id="@+id/darling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Darling in the Franxx"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/recomendados" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="351dp"
+        android:layout_height="213dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/darling"
+        android:clickable="true"
+        android:onClick="chamarDarling"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/darling" />
+
+</android.support.constraint.ConstraintLayout>

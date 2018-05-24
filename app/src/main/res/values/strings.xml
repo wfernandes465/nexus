@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">LoginCadastro</string>
+    <string name="texto_conta">Todas as Contas</string>
+    <string name="hint_nome">Nome</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_senha">Senha</string>
+    <string name="hint_confirmar_senha">Confirmar Senha</string>
+    <string name="texto_login">Login</string>
+    <string name="texto_cadastro">Cadastro</string>
+    <string name="mensagemErro_nome">Informe o Nome</string>
+    <string name="mensagemErro_email">Informe um Email válido</string>
+    <string name="mensagemErro_idade">Informe a idade</string>
+    <string name="mensagemErro_senha">Informe a senha</string>
+    <string name="mensagemSucesso">Cadastro realizado com sucesso!</string>
+    <string name="texto_novoCadastro">Não possui uma conta? Crie uma!</string>
+    <string name="texto_possuiCadastro">Já possui uma conta? Fazer Login</string>
+    <string name="emailJaCadastrado">Email já utilizado</string>
+    <string name="senhasDiferentes">As senhas devem ser iguais</string>
+    <string name="emailSenhaInvalidos">Email ou senha Incorretos</string>
+    <string name="configuracao">Configurações</string>
+    <string name="texto_ola">Hello,</string>
+    <string name="texto_titulo">Nexus</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mist.nexus.com.nexus">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/nexuslogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Telas.TelaLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="mist.nexus.com.nexus.Comentarios.BerserkComentarios"/>
+        <activity android:name="mist.nexus.com.nexus.Telas.TelaBerserk"/>
+        <activity android:name="mist.nexus.com.nexus.Telas.TelaSuperCampeoes"/>
+        <activity android:name="mist.nexus.com.nexus.Telas.TelaDBZ"/>
+        <activity android:name="mist.nexus.com.nexus.Telas.TelaDarling"/>
+        <activity android:name="mist.nexus.com.nexus.Telas.TelaNanatsu"/>
+        <activity android:name="mist.nexus.com.nexus.Telas.TelaNaruto"/>
+        <activity android:name="mist.nexus.com.nexus.LobbyActivity"/>
+        <activity android:name="mist.nexus.com.nexus.Telas.TelaCadastro" />
+    </application>
+
+</manifest>
